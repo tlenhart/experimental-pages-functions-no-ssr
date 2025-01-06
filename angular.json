@@ -62,7 +62,10 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/",
+              "extractLicenses": true,
+              "subresourceIntegrity": true
             },
             "development": {
               "optimization": false,
