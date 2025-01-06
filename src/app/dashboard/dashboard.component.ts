@@ -15,7 +15,7 @@ export class DashboardComponent {
     this.getStatus.set('sending');
 
     // TODO: HTTP calls with service worker.
-    this.http.get('/functions/helloworld')
+    this.http.get('/api/helloworld')
       .subscribe({
         next: (response: unknown) => {
           console.log('helloworld response: ', response);
