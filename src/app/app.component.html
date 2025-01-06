@@ -227,6 +227,14 @@
       </svg>
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <div>Current route: {{currentRoute()}}</div>
+      <div class="routes">
+        <a [routerLink]="['/']">Home</a>
+        <a [routerLink]="['/', 'dashboard']">Dashboard</a>
+        <a [routerLink]="['/', 'dashed-path-experiment']">Dashed Path Experiment</a>
+        <a [routerLink]="['/', 'nested']">Nested Root</a>
+        <a [routerLink]="['/', 'nested', 'nested-one']">Nested Root -> Nested One</a>
+      </div>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
